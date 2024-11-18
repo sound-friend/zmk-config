@@ -68,11 +68,11 @@
 
         left_mods {
             bindings = <
-&trans  &trans         &trans              &trans        &trans          &trans                          &kp LC(PG_UP)  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans     &trans  &trans
-&trans  &kp LG(LEFT)   &kp LG(DOWN)        &kp LG(UP)    &kp LG(RIGHT)   &mkp MCLK                       &kp LC(PG_DN)  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans     &trans  &trans
-&trans  &sk LEFT_GUI   &sk LEFT_ALT        &sk LCTRL     &sk LEFT_SHIFT  &kp LEFT_GUI                    &kp LEFT       &kp DOWN           &kp UP                &kp RIGHT  &trans  &trans
-&trans  &kp LG(MINUS)  &kp LG(UNDERSCORE)  &kp LG(PLUS)  &kp LG(EQUAL)   &trans        &trans    &trans  &trans         &trans             &trans                &trans     &trans  &trans
-                                           &trans        &trans          &trans        &trans    &trans  &trans         &trans             &trans
+&trans  &trans         &trans              &trans        &trans          &trans                                            &kp LC(PG_UP)  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans     &trans  &trans
+&trans  &kp LG(LEFT)   &kp LG(DOWN)        &kp LG(UP)    &kp LG(RIGHT)   &mkp MCLK                                         &kp LC(PG_DN)  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans     &trans  &trans
+&trans  &sk LEFT_GUI   &sk LEFT_ALT        &sk LCTRL     &sk LEFT_SHIFT  &kp LEFT_GUI                                      &kp LEFT       &kp DOWN           &kp UP                &kp RIGHT  &trans  &trans
+&trans  &kp LG(MINUS)  &kp LG(UNDERSCORE)  &kp LG(PLUS)  &kp LG(EQUAL)   &trans        &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &trans         &trans             &trans                &trans     &trans  &trans
+                                           &trans        &trans          &trans        &trans               &trans         &trans         &trans             &trans
             >;
         };
 
