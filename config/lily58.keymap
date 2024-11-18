@@ -79,11 +79,11 @@
 
         symbols {
             bindings = <
-&trans     &trans            &trans         &trans            &trans             &trans                          &trans         &trans         &trans                &trans                 &trans        &trans
-&kp GRAVE  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                      &kp AMPERSAND  &double_colon  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
-&trans     &kp EXCLAMATION   &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                        &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&trans     &kp CARET         &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &dotdotslash  &trans    &trans  &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
-                                            &trans            &trans             &trans        &trans    &trans  &trans         &trans         &trans
+&trans  &trans           &trans         &trans            &trans             &trans                          &trans         &trans      &trans                &trans                 &trans        &trans
+&none   &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                      &kp AMPERSAND  &kp SQT     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
+&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                        &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans  &kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &dotdotslash  &trans    &trans  &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
+                                        &trans            &trans             &trans        &trans    &trans  &trans         &trans      &trans
             >;
         };
 
@@ -119,11 +119,11 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans           &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &mkp LCLK       &msc MOVE_DOWN  &msc MOVE_UP     &mkp MB2         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &none   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &msc MOVE_LEFT  &msc MOVE_RIGHT  &trans           &trans  &trans
-                        &trans  &trans  &to 0   &trans    &trans  &to 0           &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans          &trans          &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &mkp LCLK       &msc MOVE_DOWN  &msc MOVE_UP     &mkp MB2         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &none   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans     &trans          &msc MOVE_LEFT  &msc MOVE_RIGHT  &trans           &trans  &trans
+                        &trans  &trans  &to 0   &mkp RCLK    &mkp LCLK  &to 0           &trans          &trans
             >;
         };
 
