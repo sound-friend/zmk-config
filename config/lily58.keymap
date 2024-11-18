@@ -122,7 +122,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans           &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &mkp LCLK       &msc MOVE_DOWN  &msc MOVE_UP     &mkp MB2         &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &none   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &mwh MOVE_LEFT  &mwh MOVE_RIGHT  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &msc MOVE_LEFT  &msc MOVE_RIGHT  &trans           &trans  &trans
                         &trans  &trans  &to 0   &trans    &trans  &to 0           &trans          &trans
             >;
         };
