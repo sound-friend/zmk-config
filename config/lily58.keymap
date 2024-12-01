@@ -84,11 +84,11 @@
 
         left_mods {
             bindings = <
-&bt BT_CLR_ALL  &trans        &trans        &trans         &trans         &trans                                            &kp LC(PG_UP)  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans     &trans  &trans
-&trans          &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)     &kp LG(RIGHT)  &mkp MCLK                                         &kp LC(PG_DN)  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans     &trans  &trans
-&kp CAPS        &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL      &shift_lock    &kp LEFT_GUI                                      &kp LEFT       &kp DOWN           &kp UP                &kp RIGHT  &trans  &trans
-&trans          &trans        &kt LG(R)     &kt LG(LS(R))  &trans         &trans        &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &trans         &trans             &trans                &trans     &trans  &trans
-                                            &trans         &trans         &trans        &trans               &trans         &trans         &trans             &trans
+&bt BT_CLR_ALL  &trans        &trans        &trans         &trans         &trans                                                  &kp LC(PG_UP)  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans     &trans  &trans
+&trans          &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)     &kp LG(RIGHT)  &mkp MCLK                                               &kp LC(PG_DN)  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans     &trans  &trans
+&kp CAPS        &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL      &shift_lock    &kp LEFT_GUI                                            &kp LEFT       &kp DOWN           &kp UP                &kp RIGHT  &trans  &trans
+&trans          &trans        &kt LG(R)     &kt LG(LS(R))  &trans         &trans        &kp LG(LC(DOWN))    &kp LG(LC(UP_ARROW))  &trans         &trans             &trans                &trans     &trans  &trans
+                                            &trans         &trans         &trans        &trans              &trans                &trans         &trans             &trans
             >;
         };
 
