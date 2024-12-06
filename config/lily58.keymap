@@ -93,20 +93,20 @@
 
         symbols {
             bindings = <
-&trans  &trans           &trans         &trans            &trans             &trans                          &trans         &trans      &trans                &trans                 &trans        &trans
-&none   &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                      &kp AMPERSAND  &kp SQT     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
-&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                        &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&trans  &kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &dotdotslash  &trans    &trans  &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
-                                        &trans            &trans             &trans        &trans    &trans  &trans         &trans      &trans
+&trans  &trans           &trans         &trans            &trans             &trans                            &trans         &trans      &trans                &trans                 &trans        &trans
+&none   &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                        &kp AMPERSAND  &kp SQT     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
+&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                          &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans  &kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &dotdotslash  &trans    &kp SEMI  &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
+                                        &trans            &trans             &trans        &trans    &trans    &trans         &trans      &trans
             >;
         };
 
         numpad_layer_2 {
             bindings = <
-&none      &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &none   &none   &none   &none   &none
-&none      &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp N1  &kp N2  &kp N3  &none   &none
-&kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &none              &kp N4  &kp N5  &kp N6  &none   &none
-&kp LCTRL  &none   &none    &none    &none    &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &none              &kp N7  &kp N8  &kp N9  &kp N0  &kp RIGHT_SHIFT
+&none      &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &none   &none   &none   &none                  &none
+&none      &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp N1  &kp N2  &kp N3  &kp LEFT_PARENTHESIS   &none
+&kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &none              &kp N4  &kp N5  &kp N6  &kp RIGHT_PARENTHESIS  &none
+&kp LCTRL  &none   &none    &none    &none    &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &kp MINUS          &kp N7  &kp N8  &kp N9  &kp N0                 &kp RIGHT_SHIFT
                             &trans   &trans   &to 0                 &trans               &trans         &to 0              &trans  &trans
             >;
         };
