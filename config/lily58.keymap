@@ -5,10 +5,13 @@
  */
 
 #include "behaviors/mouse_keys.dtsi"
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk {
     quick-release;
@@ -20,12 +23,12 @@
         compatible = "zmk,combos";
 
         to-numpad {
-            bindings = <&to 3>;
+            bindings = <&to 4>;
             key-positions = <19 20 21>;
         };
 
         to_qwerty {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <16 15 14>;
         };
 
@@ -87,7 +90,7 @@
 &trans          &kp LG(LEFT)   &kp LG(DOWN)        &kp LG(UP)    &kp LG(RIGHT)  &mkp MCLK                                         &kp LC(PG_DN)  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans     &trans  &trans
 &kp CAPS        &sk LEFT_GUI   &sk LEFT_ALT        &sk LCTRL     &shift_lock    &kp LEFT_GUI                                      &kp LEFT       &kp DOWN           &kp UP                &kp RIGHT  &trans  &trans
 &trans          &kp LG(MINUS)  &kp LG(UNDERSCORE)  &kp LG(PLUS)  &kp LG(EQUAL)  &trans        &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &trans         &trans             &trans                &trans     &trans  &trans
-                                                   &trans        &trans         &trans        &trans               &trans         &trans         &trans             &trans
+                                                   &trans        &trans         &trans        &trans               &trans         &mo 3          &trans             &trans
             >;
         };
 
@@ -97,7 +100,17 @@
 &none   &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                        &kp AMPERSAND  &kp SQT     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
 &trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                          &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
 &trans  &kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &dotdotslash  &trans    &kp SEMI  &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
-                                        &trans            &trans             &trans        &trans    &trans    &trans         &trans      &trans
+                                        &trans            &trans             &mo 3         &trans    &trans    &trans         &trans      &trans
+            >;
+        };
+
+        numbers {
+            bindings = <
+&trans  &trans      &trans            &trans            &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_PLAY_PAUSE  &kp K_NEXT  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1      &kp N2            &kp N3            &kp N4      &kp N5                    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&trans  &trans      &trans            &trans            &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans            &trans      &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
@@ -121,16 +134,6 @@
             >;
         };
 
-        right_mods {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans     &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans     &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &sk LEFT_SHIFT  &sk LCTRL  &sk LEFT_ALT  &sk LEFT_GUI  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans     &trans        &trans        &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
-            >;
-        };
-
         mouse_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                          &trans          &trans          &trans           &trans           &trans  &trans
@@ -141,13 +144,23 @@
             >;
         };
 
+        right_mods {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans     &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans     &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &sk LEFT_SHIFT  &sk LCTRL  &sk LEFT_ALT  &sk LEFT_GUI  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans     &trans        &trans        &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
+            >;
+        };
+
         window_management {
             bindings = <
 &bt BT_CLR_ALL  &none  &none          &none              &none             &none                                              &kp LC(PG_UP)      &none         &none             &none      &none  &none
 &none           &none  &kp LG(MINUS)  &kp LS(LG(UNDER))  &kp LS(LG(PLUS))  &kp LG(EQUAL)                                      &kp LC(PAGE_DOWN)  &none         &none             &none      &none  &none
 &trans          &none  &kp LG(LEFT)   &kp LG(DOWN)       &kp LG(UP_ARROW)  &kp LG(RIGHT)                                      &kp LEFT           &kp DOWN      &kp UP            &kp RIGHT  &none  &none
 &trans          &none  &none          &none              &none             &none          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &kp LEFT_SHIFT     &kp LEFT_ALT  &kp LEFT_CONTROL  &none      &none  &none
-                                      &trans             &trans            &trans         &trans               &trans         &to 8              &to 4         &trans
+                                      &trans             &trans            &trans         &trans               &trans         &to 9              &to 5         &trans
             >;
         };
 
